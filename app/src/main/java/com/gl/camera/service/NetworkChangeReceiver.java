@@ -1,4 +1,4 @@
-package com.yjm.camera.service;
+package com.gl.camera.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -21,11 +21,11 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
         NetworkInfo networkInfo = connectionManager.getActiveNetworkInfo();
         LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(context);
         if (networkInfo != null && networkInfo.isAvailable()) {
-//            localBroadcastManager.sendBroadcast(new Intent("com.yjm.camera.RESTART_LISTEN"));
+//            localBroadcastManager.sendBroadcast(new Intent("com.gl.camera.RESTART_LISTEN"));
             Log.i(TAG, "网络可用");
         } else {
             Log.i(TAG, "网络不可用");
-//            localBroadcastManager.sendBroadcast(new Intent("com.yjm.camera.STOP_LISTEN"));
+//            localBroadcastManager.sendBroadcast(new Intent("com.gl.camera.STOP_LISTEN"));
         }
     }
 

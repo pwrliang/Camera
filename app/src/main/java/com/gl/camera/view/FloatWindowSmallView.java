@@ -1,4 +1,4 @@
-package com.yjm.camera.view;
+package com.gl.camera.view;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,10 +12,10 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.yjm.camera.R;
-import com.yjm.camera.model.MyCamera;
-import com.yjm.camera.model.MyCameraEx;
-import com.yjm.camera.util.Preference;
+import com.gl.camera.R;
+import com.gl.camera.model.MyCamera;
+import com.gl.camera.model.MyCameraEx;
+import com.gl.camera.util.Preference;
 
 public class FloatWindowSmallView extends LinearLayout {
     private SurfaceView mSurfaceView;
@@ -39,7 +39,7 @@ public class FloatWindowSmallView extends LinearLayout {
         mPreference = Preference.getInstance(getContext());
         mBroadcastManager = LocalBroadcastManager.getInstance(getContext());
         mReceiver = new LocalReceiver();
-        mBroadcastManager.registerReceiver(mReceiver, new IntentFilter("com.yjm.camera.RESTART_LISTEN"));
+        mBroadcastManager.registerReceiver(mReceiver, new IntentFilter("com.gl.camera.RESTART_LISTEN"));
         mSurfaceHolder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
@@ -103,12 +103,12 @@ public class FloatWindowSmallView extends LinearLayout {
     private class LocalReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals("com.yjm.camera.RESTART_LISTEN")) {
+            if (intent.getAction().equals("com.gl.camera.RESTART_LISTEN")) {
                 Log.i(TAG, "重启服务");
                 myCamera.stopWaiting();
                 myCameraEx.disConn(true);
                 startListen();
-            } else if (intent.getAction().equals("com.yjm.camera.STOP_LISTEN")) {
+            } else if (intent.getAction().equals("com.gl.camera.STOP_LISTEN")) {
                 myCamera.stopWaiting();
                 myCameraEx.disConn(true);
             }

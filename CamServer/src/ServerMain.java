@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.yjm.shared.Data;
+import com.gl.shared.Data;
 
 class IOStream {
 	InputStream inputStream;
@@ -162,7 +162,7 @@ public class ServerMain {
 						Data data = Data.fromInputStream(inputStream);
 						try {
 							if (data != null) {
-								// ±»¼à¿Ø¶ËÁ´½Óµ½·þÎñÆ÷
+								// ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 								if (data.getTag() == Data.TAG_CAM_CONN_TO_SERVER) {
 									String id = new String(data.getData(), "utf-8");
 									HeartBeatThread heartBeatThread;
@@ -216,7 +216,7 @@ public class ServerMain {
 								}
 							} else {
 								System.out.println(Utility.getNow() + "Data is null");
-								// dataÎªnull£¬ËµÃ÷¶ÁÊ§°Ü£¬¹Ø±Õsocket
+								// dataÎªnullï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½Ø±ï¿½socket
 								// inputStream.close();
 								if (outputStream != null) {
 									outputStream.close();

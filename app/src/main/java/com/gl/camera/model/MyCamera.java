@@ -1,4 +1,4 @@
-package com.yjm.camera.model;
+package com.gl.camera.model;
 
 
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.hardware.Camera;
 import android.util.Log;
 import android.view.SurfaceHolder;
 
-import com.yjm.camera.util.BitmapUtility;
-import com.yjm.shared.Data;
+import com.gl.camera.util.BitmapUtility;
+import com.gl.shared.Data;
 
 import org.opencv.android.Utils;
 import org.opencv.core.CvType;

@@ -1,4 +1,4 @@
-package com.yjm.camera.service;
+package com.gl.camera.service;
 
 import android.app.Application;
 import android.util.Log;

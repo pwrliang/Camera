@@ -1,4 +1,4 @@
-package com.yjm.camera.util;
+package com.gl.camera.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

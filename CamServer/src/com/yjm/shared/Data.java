@@ -1,4 +1,4 @@
-package com.yjm.shared;
+package com.gl.shared;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -12,14 +12,14 @@ import java.util.zip.GZIPOutputStream;
 
 public class Data implements Serializable {
     private static final long serialVersionUID = -7768683932651126083L;
-    public static final short TAG_HELLO = 0;//ÐÄÌø°ü
-    public static final short TAG_START_FRONT = 1;//Æô¶¯Ç°ÉãÏñÍ·
-    public static final short TAG_START_BACK = 2;//Æô¶¯ºóÉãÏñÍ·
-    public static final short TAG_STOP = 3;//Í£Ö¹¼à¿Ø
-    public static final short TAG_VIDEO = 4;//ÊÓÆµÊý¾Ý
-    public static final short TAG_ERR_PASSWORD = 5;//ÃÜÂë´íÎó
-    public static final short TAG_CAM_CONN_TO_SERVER = 6;//±»¼à¿Ø¶ËÁ¬½Óµ½·þÎñÆ÷
-    public static final short TAG_MON_CONN_TO_SERVER = 7;//¼à¿Ø¶ËÁ¬½Óµ½·þÎñÆ÷
+    public static final short TAG_HELLO = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static final short TAG_START_FRONT = 1;//ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Í·
+    public static final short TAG_START_BACK = 2;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+    public static final short TAG_STOP = 3;//Í£Ö¹ï¿½ï¿½ï¿½
+    public static final short TAG_VIDEO = 4;//ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+    public static final short TAG_ERR_PASSWORD = 5;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static final short TAG_CAM_CONN_TO_SERVER = 6;//ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static final short TAG_MON_CONN_TO_SERVER = 7;//ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private String password;
     byte[] data;
     short tag;

@@ -1,4 +1,4 @@
-package com.yjm.camera.view;
+package com.gl.camera.view;
 
 import android.content.Context;
 import android.graphics.PixelFormat;

@@ -1,4 +1,4 @@
-package com.yjm.camera.util;
+package com.gl.camera.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

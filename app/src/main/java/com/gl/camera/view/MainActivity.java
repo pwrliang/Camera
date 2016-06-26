@@ -1,4 +1,4 @@
-package com.yjm.camera.view;
+package com.gl.camera.view;
 
 import android.Manifest;
 import android.content.ClipboardManager;
@@ -30,11 +30,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.zxing.WriterException;
-import com.yjm.camera.R;
-import com.yjm.camera.model.MyCamera;
-import com.yjm.camera.service.FloatWindowService;
-import com.yjm.camera.util.BitmapUtility;
-import com.yjm.camera.util.Preference;
+import com.gl.camera.R;
+import com.gl.camera.model.MyCamera;
+import com.gl.camera.service.FloatWindowService;
+import com.gl.camera.util.BitmapUtility;
+import com.gl.camera.util.Preference;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this, "请输入1024-9999范围内的端口号", Toast.LENGTH_SHORT).show();
                 } else {
                     mPreference.setPort(Integer.parseInt(edtPort.getText().toString()));
-                    mBroadcastManager.sendBroadcast(new Intent("com.yjm.camera.RESTART_LISTEN"));   //发送广播通知重新监听
+                    mBroadcastManager.sendBroadcast(new Intent("com.gl.camera.RESTART_LISTEN"));   //发送广播通知重新监听
                     updateInfo();
                 }
             }
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this, "请输入至少5位密码", Toast.LENGTH_SHORT).show();
                 } else {
                     mPreference.setPassword(edtPassword.getText().toString());
-                    mBroadcastManager.sendBroadcast(new Intent("com.yjm.camera.RESTART_LISTEN"));   //发送广播通知重新监听
+                    mBroadcastManager.sendBroadcast(new Intent("com.gl.camera.RESTART_LISTEN"));   //发送广播通知重新监听
                     updateInfo();
                 }
             }

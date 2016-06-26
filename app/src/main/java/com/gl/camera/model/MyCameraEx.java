@@ -1,4 +1,4 @@
-package com.yjm.camera.model;
+package com.gl.camera.model;
 
 
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.hardware.Camera;
 import android.util.Log;
 import android.view.SurfaceHolder;
 
-import com.yjm.shared.Data;
+import com.gl.shared.Data;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +19,7 @@ import java.net.SocketException;
 /**
  * Created by Liang on 2016/4/5.
  */
-public class MyCameraEx extends MyCamera implements Camera.PreviewCallback {
+public class MyCameraEx extends com.gl.camera.model.MyCamera implements Camera.PreviewCallback {
     private static final String TAG = "MyCameraEx";
     private Socket mSocket;
     private InputStream mInputStream;

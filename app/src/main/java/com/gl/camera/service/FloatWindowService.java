@@ -1,4 +1,4 @@
-package com.yjm.camera.service;
+package com.gl.camera.service;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
@@ -14,9 +14,9 @@ import android.os.IBinder;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
-import com.yjm.camera.R;
-import com.yjm.camera.view.MainActivity;
-import com.yjm.camera.view.MyWindowManager;
+import com.gl.camera.R;
+import com.gl.camera.view.MainActivity;
+import com.gl.camera.view.MyWindowManager;
 
 import java.util.ArrayList;
 import java.util.List;
