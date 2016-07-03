@@ -73,9 +73,7 @@ public class FloatWindowSmallView extends LinearLayout {
                 myCamera.waitRequest();
             }
         }).start();
-        //45.32.89.187
-        //192.168.43.71
-        myCameraEx = new MyCameraEx(getContext(), mSurfaceHolder, "104.156.239.35", 3295, mPreference.getPassword(), mPreference.getDeviceId());
+        myCameraEx = new MyCameraEx(getContext(), mSurfaceHolder, "43.224.34.90", 3295, mPreference.getPassword(), mPreference.getDeviceId());
         myCameraEx.setResolution(mPreference.getResolution());
         myCameraEx.setQuality(mPreference.getQuality());
         myCameraEx.setFPS(mPreference.getFPS());
